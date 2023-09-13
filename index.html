@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>encmessage</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  </head>
+  <body>
+    <header>
+      <h1>Encryption message</h1>
+    </header>
+    <main>
+      <div>
+        <form>
+          <label for="plaintext">message</label>
+          <textarea id="plaintext"></textarea>
+          <button id="encrypt">Encrypt</button>
+        </form>
+      </div>
+      <div>
+        <div>
+          <b>Result</b>
+        </div>
+        <p id="result">
+        </p>
+        <button id="copy">Copy</button>
+      </div>
+    </main>
+    <script src="https://unpkg.com/openpgp@5.10.1/dist/openpgp.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
